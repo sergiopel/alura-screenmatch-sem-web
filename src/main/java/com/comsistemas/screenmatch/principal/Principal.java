@@ -34,6 +34,7 @@ public class Principal {
         // é preciso transformar o json em objeto java.
         // Então representaremos o json como DadosSerie, que é um record com os campos:
         // 'titulo', 'totalTemporadas' e 'avaliacao' (só quero pegar esses campos).
+        System.out.println("Json: " + json);
         DadosSerie dadosSerie = conversor.obterDados(json, DadosSerie.class); // trará titulo, totalTemporadas e avaliacao
         System.out.println("Impressão dos dados da série: " + dadosSerie);
 
